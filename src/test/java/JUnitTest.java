@@ -25,6 +25,21 @@ public class JUnitTest {
         String actual = ne.nonExistingMethod();
         assertEquals("Hello", actual);
     }
+
+    @Test
+    public void MyTest() {
+        TestClass test = new TestClass();
+        String hello = test.sayHello();
+        assertEquals(hello, "Hello");
+
+
+        String h = "Hello";
+        assertEquals("Hello", h);
+
+        assertEquals(1, 1);
+        assertTrue(true);
+        assertNotEquals(true, false);
+    }
     
     @BeforeAll
 
